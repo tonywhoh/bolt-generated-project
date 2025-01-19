@@ -1,36 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modern Website</title>
-  <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/utilities.css">
+  <title>MedCare - Emergency Services</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
 </head>
 <body>
   <header class="header">
     <nav class="nav container">
-      <a href="/" class="logo">Brand</a>
+      <a href="/" class="logo">
+        <span class="material-icons-round">emergency</span>
+        <span>MedCare</span>
+      </a>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span class="hamburger"></span>
       </button>
       <ul class="nav-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <button class="theme-toggle" aria-label="Toggle theme">
-            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
-            </svg>
-            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
-              <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-            </svg>
-            <span class="theme-toggle-text">Dark</span>
-          </button>
-        </li>
+        <li><a href="#home"><span class="material-icons-round">home</span>Home</a></li>
+        <li><a href="#services"><span class="material-icons-round">medical_services</span>Services</a></li>
+        <li><a href="#contact"><span class="material-icons-round">contact_phone</span>Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -38,41 +28,32 @@
   <main>
     <section id="home" class="hero">
       <div class="container">
-        <h1>Welcome to Our Website</h1>
-        <p>Creating modern digital experiences</p>
-        <a href="#contact" class="btn">Get Started</a>
-      </div>
-    </section>
-
-    <section id="about" class="about section">
-      <div class="container">
-        <h2>About Us</h2>
-        <div class="about-grid">
-          <div class="about-content">
-            <p>We specialize in creating beautiful digital experiences.</p>
-          </div>
-          <div class="about-image">
-            <img src="https://picsum.photos/400/300" alt="About us image" loading="lazy">
-          </div>
+        <h1><span class="material-icons-round">emergency</span>Emergency Medical Services</h1>
+        <p class="hero-text">Available 24/7 for your emergency needs</p>
+        <div class="hero-actions">
+          <a href="tel:911" class="btn btn-emergency">
+            <span class="material-icons-round">phone_in_talk</span>
+            Call Emergency: 911
+          </a>
         </div>
       </div>
     </section>
 
     <section id="services" class="services section">
       <div class="container">
-        <h2>Our Services</h2>
+        <h2><span class="material-icons-round">medical_services</span>Our Services</h2>
         <div class="services-grid">
           <div class="service-card">
-            <h3>Web Design</h3>
-            <p>Modern and responsive websites</p>
+            <span class="material-icons-round service-icon">emergency</span>
+            <h3>Emergency Response</h3>
+            <p>Immediate medical assistance for critical situations</p>
+            <a href="tel:911" class="btn">Call Now</a>
           </div>
           <div class="service-card">
-            <h3>Development</h3>
-            <p>Custom web applications</p>
-          </div>
-          <div class="service-card">
-            <h3>SEO</h3>
-            <p>Search engine optimization</p>
+            <span class="material-icons-round service-icon">airport_shuttle</span>
+            <h3>Medical Transport</h3>
+            <p>Scheduled medical transportation services</p>
+            <a href="#contact" class="btn">Book Transport</a>
           </div>
         </div>
       </div>
@@ -80,22 +61,37 @@
 
     <section id="contact" class="contact section">
       <div class="container">
-        <h2>Contact Us</h2>
-        <form id="contact-form" class="contact-form">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+        <h2><span class="material-icons-round">contact_phone</span>Contact Us</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3><span class="material-icons-round">emergency</span>Emergency</h3>
+            <a href="tel:911" class="btn btn-emergency">Call 911</a>
           </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label>
+                <span class="material-icons-round">person</span>
+                Name
+              </label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+              <label>
+                <span class="material-icons-round">email</span>
+                Email
+              </label>
+              <input type="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label>
+                <span class="material-icons-round">message</span>
+                Message
+              </label>
+              <textarea name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
@@ -103,22 +99,20 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <div class="footer-brand">
-          <a href="/" class="logo">Brand</a>
-          <p>Creating modern digital experiences</p>
-        </div>
-        <div class="social-links">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <div class="footer-info">
+          <div class="logo">
+            <span class="material-icons-round">emergency</span>
+            <span>MedCare</span>
+          </div>
+          <p>Your trusted partner in emergency medical services.</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 Brand. All rights reserved.</p>
+        <p>&copy; 2024 MedCare. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>

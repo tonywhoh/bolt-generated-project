@@ -8,6 +8,7 @@
   border: none;
   cursor: pointer;
   transition: var(--transition);
+  font-weight: 500;
 }
 
 .btn:hover {
@@ -28,3 +29,15 @@
 .mb-2 { margin-bottom: var(--spacing-sm); }
 .mb-3 { margin-bottom: var(--spacing-md); }
 .mb-4 { margin-bottom: var(--spacing-lg); }
+
+.emergency-btn {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.2rem;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  margin: var(--spacing-md) 0;
+}
+
+.emergency-btn:hover {
+  background-color: var(--secondary-color);
+}

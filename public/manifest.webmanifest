@@ -1,0 +1,44 @@
+{
+  "name": "MedCare Emergency Services",
+  "short_name": "MedCare",
+  "description": "24/7 Emergency ambulance services and medical transport",
+  "theme_color": "#dc2626",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "pwa-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Call Emergency",
+      "short_name": "Emergency",
+      "description": "Call emergency services",
+      "url": "tel:911",
+      "icons": [{ "src": "pwa-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}
