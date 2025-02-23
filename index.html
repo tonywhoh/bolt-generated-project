@@ -3,116 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MedCare - Emergency Services</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
+  <title>Cleaning Services PWA</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/src/index.css">
 </head>
 <body>
-  <header class="header">
-    <nav class="nav container">
-      <a href="/" class="logo">
-        <span class="material-icons-round">emergency</span>
-        <span>MedCare</span>
-      </a>
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <ul class="nav-menu">
-        <li><a href="#home"><span class="material-icons-round">home</span>Home</a></li>
-        <li><a href="#services"><span class="material-icons-round">medical_services</span>Services</a></li>
-        <li><a href="#contact"><span class="material-icons-round">contact_phone</span>Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="home" class="hero">
-      <div class="container">
-        <h1><span class="material-icons-round">emergency</span>Emergency Medical Services</h1>
-        <p class="hero-text">Available 24/7 for your emergency needs</p>
-        <div class="hero-actions">
-          <a href="tel:911" class="btn btn-emergency">
-            <span class="material-icons-round">phone_in_talk</span>
-            Call Emergency: 911
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="services section">
-      <div class="container">
-        <h2><span class="material-icons-round">medical_services</span>Our Services</h2>
-        <div class="services-grid">
-          <div class="service-card">
-            <span class="material-icons-round service-icon">emergency</span>
-            <h3>Emergency Response</h3>
-            <p>Immediate medical assistance for critical situations</p>
-            <a href="tel:911" class="btn">Call Now</a>
-          </div>
-          <div class="service-card">
-            <span class="material-icons-round service-icon">airport_shuttle</span>
-            <h3>Medical Transport</h3>
-            <p>Scheduled medical transportation services</p>
-            <a href="#contact" class="btn">Book Transport</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact section">
-      <div class="container">
-        <h2><span class="material-icons-round">contact_phone</span>Contact Us</h2>
-        <div class="contact-grid">
-          <div class="contact-info">
-            <h3><span class="material-icons-round">emergency</span>Emergency</h3>
-            <a href="tel:911" class="btn btn-emergency">Call 911</a>
-          </div>
-          <form id="contact-form" class="contact-form">
-            <div class="form-group">
-              <label>
-                <span class="material-icons-round">person</span>
-                Name
-              </label>
-              <input type="text" name="name" required>
-            </div>
-            <div class="form-group">
-              <label>
-                <span class="material-icons-round">email</span>
-                Email
-              </label>
-              <input type="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label>
-                <span class="material-icons-round">message</span>
-                Message
-              </label>
-              <textarea name="message" required></textarea>
-            </div>
-            <button type="submit" class="btn">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-info">
-          <div class="logo">
-            <span class="material-icons-round">emergency</span>
-            <span>MedCare</span>
-          </div>
-          <p>Your trusted partner in emergency medical services.</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 MedCare. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script type="module" src="main.js"></script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
